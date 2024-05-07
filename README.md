@@ -19,5 +19,5 @@ Subset of Tennis Refactoring Kata by Emily Bache https://github.com/emilybache/T
     * [Script al que se le aplicará el refactoring](tennis_refactoring_kata/tennis6.py).
 2. Relice un análisis del proyecto en su estado actual usando SonarQube, guarde el reporte de issues en la carpeta [reporte_analisis_1](tennis_refactoring_kata/reporte_analisis_1)
 3. Tomando como guía este video haga refactoring al script tennis6.py, https://www.youtube.com/watch?v=OPaw3UtSKKA&t=240s
-4. Realice de nuevo el análisis con SonarQube, guarde el reporte de issues en la carpeta [tennis_refactoring_katareporte_analisis_2](tennis_refactoring_kata/reporte_analisis_2)
+4. Realice de nuevo el análisis con SonarQube, guarde el reporte de issues en la carpeta [reporte_analisis_2](tennis_refactoring_kata/reporte_analisis_2)
 5. Documente aquí las diferencia que identifica en los resultados de SonarQube tras realizar el refactoring [diferencias_analisis_sonarqube.txt](tennis_refactoring_kata/diferencias_analisis_sonarqube.txt)
