@@ -50,7 +50,7 @@ class TennisGame6:
 
             match (self.player1Score):
                 case 0:
-                    score1 = "Love"
+                    score1 = "Lover"
                 case 1:
                     score1 = "Fifteen"
                 case 2:
