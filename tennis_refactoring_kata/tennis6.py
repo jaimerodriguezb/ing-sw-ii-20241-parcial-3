@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*---
 
 class TennisGame6:
     def __init__(self, player1Name, player2Name):
