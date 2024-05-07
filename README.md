@@ -15,8 +15,8 @@ Sub set of Tennis Refactoring Kata by Emily Bache https://github.com/emilybache/
 ## Desarrollo del parcial
 
 1. Inspecciones el proyecto para entender de que se tratan e particular tenga en cuenta los siguientes scripts:
-    1.1. [Pruebas unitarias](tennis_test.py).
-    1.2. [Script al que se le aplicará el refactoring](tennis6.py).
+    * [Pruebas unitarias](tennis_test.py).
+    * [Script al que se le aplicará el refactoring](tennis6.py).
 2. Relice un análisis del proyecto en su estado actual usando SonarQube, guarde el reporte de issues en la carpeta [reporte_analisis_1](reporte_analisis_1)
 3. Tomando como guía este video haga refactoring al script tennis6.py, https://www.youtube.com/watch?v=OPaw3UtSKKA&t=240s
 4. Realice de nuevo el análisis con SonarQube, guarde el reporte de issues en la carpeta [reporte_analisis_2](reporte_analisis_2)
