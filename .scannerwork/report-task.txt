@@ -1,6 +1,6 @@
-projectKey=parcial-3-prueba-2
+projectKey=parcial-3-Resul
 serverUrl=http://localhost:9000
 serverVersion=9.9.5.90363
-dashboardUrl=http://localhost:9000/dashboard?id=parcial-3-prueba-2
-ceTaskId=AY9bqMypDK-2M5oGO0N_
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AY9bqMypDK-2M5oGO0N_
+dashboardUrl=http://localhost:9000/dashboard?id=parcial-3-Resul
+ceTaskId=AY9e2mgUuTgxErZxP_De
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AY9e2mgUuTgxErZxP_De

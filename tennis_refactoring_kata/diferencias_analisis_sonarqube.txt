@@ -1,2 +1,11 @@
-## Documente aquí las diferencia que identifica en los resultados de SonarQube tras realizar el refactoring.
-
+## Documente aquí las diferencia que identifica en los resultados de SonarQube tras realizar el refactorin.
+Lo mas resaltable del codigo es que cuando se hizo el primer analisis todos los errores que tenia eran 
+gramaticos por no segir la estructura "^[_a-z][_a-z0-9]*$." cuando se crearon los nombres de las variables
+y haciendo unas correciones minimas para hacer que tubieran la estructura que pedia el programa pasamos de 
+10 errores en "tennis6" a 0.
+El siguiente paso a seguir que tube fue mirar el codigo por mi mismo e intentar detectar que se podria
+refactorizar y siguiendo las recomendasiones del podemos ver que la gran estructura (if, elif y else) que 
+tiene el codigo se podia separa enfunciones y en logica para que fuera mas sensillo de entender tambien 
+en el codigo se encontro un caso de codigo duplicado lo cual simplemente se redujeron en para que no fuera
+duplicado y ya se paso de una deuda técnica de (6H-20m) a solo 6H teniendo en cuenta que solo se corrigió
+el tennis6 
