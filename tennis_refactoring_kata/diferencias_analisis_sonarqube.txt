@@ -1,2 +1,5 @@
 ## Documente aquí las diferencia que identifica en los resultados de SonarQube tras realizar el refactoring.
 
+Realmente no se puede hacer una comparación sustanciosa de las recomendaciones que dio SonarQube con las que da Emily Bache, ya que el reporte de Issues de la aplicación solo me recomendaba cambiar los nombres de las variables para dejarlas en notación snake_case, que es la que usa Python. Por otro lado, el video sí se centra completamente en cómo se puede refactorizar el código para hacerlo más modular, quitando la duplicación y otras incidencias. 
+Siguiendo los pasos del video, me centré en crear funciones con tareas más específicas para eliminar el código repetido, también suprimí variables que no eran realmente necesarias. Por último, cambié el nombre de las variables a notación snake_case, luego utilicé SonarQube y ya no se detectaron más issues.
+
