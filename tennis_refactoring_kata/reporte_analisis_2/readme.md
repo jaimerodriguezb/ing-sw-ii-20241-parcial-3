@@ -1,1 +1,3 @@
-Suba a este directorio el reporte de SonarQube
+Se realiza un refactor siguiendo el video se simplifica la complejidad del codigo enviando logica dentro de funciones y creando otras funciones como lo son number_to_words y las 3 compute, se realiza el cambio en el nombre de variables como deberian ser nombradas en python a demas que la duplicacion de lineas tuvo una disminucion de 586 a 574.
+
+El coverage sigue en 0% como en el primer pantallazo, sin embargo en maintainability baja a 121 gracias a los nombre de las variables, anexo se encuentran los screenshots despues del refactor

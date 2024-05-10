@@ -1,75 +1,63 @@
 # -*- coding: utf-8 -*-
 
 class TennisGame6:
-    def __init__(self, player1Name, player2Name):
-        self.player1Name = player1Name
-        self.player2Name = player2Name
-        self.player1Score = 0
-        self.player2Score = 0
+    def __init__(self, player1_name, player2_name):
+        self.player1_name = player1_name
+        self.player2_name = player2_name
+        self.player1_score = 0
+        self.player2_score = 0
 
-    def won_point(self, playerName):
-        if (playerName == "player1"):
-            self.player1Score += 1
+    def compute_tie_score(self):
+        match self.player1_score:
+            case 0:
+                return "Love-All"
+            case 1:
+                return "Fifteen-All"
+            case 2:
+                return "Thirty-All"
+            case _:
+                return "Deuce"
+    
+    def compute_end_game_score(self):
+        if (self.player1_score - self.player2_score == 1):
+            return "Advantage " + self.player1_name
+        elif (self.player1_score - self.player2_score == -1):
+            return "Advantage " + self.player2_name
+        elif (self.player1_score - self.player2_score >= 2):
+            return "Win for " + self.player1_name
         else:
-            self.player2Score += 1
+            return "Win for " + self.player2_name
+    def number_to_words(self, score):
+        if score == 0:
+            return "Love"
+        elif score == 1:
+            return "Fifteen"
+        elif score == 2:
+            return "Thirty"
+        else:
+            return "Forty"
+
+    def compute_regular_score(self):
+        score1 = self.number_to_words(self.player1_score)
+        score2 = self.number_to_words(self.player2_score)
+        regular_score = score1 + "-" + score2
+        return regular_score
+
+    def won_point(self, player_name):
+        if (player_name == "player1"):
+            self.player1_score += 1
+        else:
+            self.player2_score += 1
 
     def score(self):
         result: str
-
-        if (self.player1Score == self.player2Score):
+        if (self.player1_score == self.player2_score):
             # tie score
-            tieScore: str
-            match self.player1Score:
-                case 0:
-                    tieScore = "Love-All"
-                case 1:
-                    tieScore = "Fifteen-All"
-                case 2:
-                    tieScore = "Thirty-All"
-                case _:
-                    tieScore = "Deuce"
-
-            result = tieScore
-        elif (self.player1Score >= 4 or self.player2Score >= 4):
+            result = self.compute_tie_score()
+        elif (self.player1_score >= 4 or self.player2_score >= 4):
             # end-game score
-            endGameScore: str
-
-            if (self.player1Score - self.player2Score == 1):
-                endGameScore = "Advantage " + self.player1Name
-            elif (self.player1Score - self.player2Score == -1):
-                endGameScore = "Advantage " + self.player2Name
-            elif (self.player1Score - self.player2Score >= 2):
-                endGameScore = "Win for " + self.player1Name
-            else:
-                endGameScore = "Win for " + self.player2Name
-
-            result = endGameScore
+            result = self.compute_end_game_score()
         else:
             # regular score
-            regularScore: str
-
-            match (self.player1Score):
-                case 0:
-                    score1 = "Love"
-                case 1:
-                    score1 = "Fifteen"
-                case 2:
-                    score1 = "Thirty"
-                case _:
-                    score1 = "Forty"
-
-            match (self.player2Score):
-                case 0:
-                    score2 = "Love"
-                case 1:
-                    score2 = "Fifteen"
-                case 2:
-                    score2 = "Thirty"
-                case _:
-                    score2 = "Forty"
-
-            regularScore = score1 + "-" + score2
-
-            result = regularScore
-
+            result = self.compute_regular_score()
         return result
