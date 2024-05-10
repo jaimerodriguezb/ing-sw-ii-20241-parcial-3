@@ -1,2 +1,4 @@
-## Documente aquí las diferencia que identifica en los resultados de SonarQube tras realizar el refactoring.
+Las diferencias al realizar el refactoring no son notorias en los issues del proyecto
+ya que la base de esto es mas de simplicidad en el codigo, lo que realiza el cambio es que al
+ser de phyton el proyecto pide que las variables y las clases sean nombradas de forma snake. 
 
