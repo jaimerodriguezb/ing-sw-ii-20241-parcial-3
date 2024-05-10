@@ -1,0 +1,6 @@
+projectKey=tenis
+serverUrl=http://localhost:9000
+serverVersion=10.5.1.90531
+dashboardUrl=http://localhost:9000/dashboard?id=tenis
+ceTaskId=76d07391-673c-44b8-87cf-a19a47e5fee7
+ceTaskUrl=http://localhost:9000/api/ce/task?id=76d07391-673c-44b8-87cf-a19a47e5fee7

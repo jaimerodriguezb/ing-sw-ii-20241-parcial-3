@@ -45,3 +45,4 @@ def test_get_score_game5(p1Points, p2Points, score, p1Name, p2Name):
 def test_get_score_game6(p1Points, p2Points, score, p1Name, p2Name):
     game = play_game(TennisGame6, p1Points, p2Points, p1Name, p2Name)
     assert score == game.score()
+

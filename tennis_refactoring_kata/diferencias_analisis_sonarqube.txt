@@ -1,2 +1,14 @@
 ## Documente aquí las diferencia que identifica en los resultados de SonarQube tras realizar el refactoring.
 
+
+Cuando haces el refactoring, no siempre se notan grandes cambios en los 
+problemas del proyecto. Principalmente, el objetivo es simplificar el código.
+La mayor diferencia se da en cómo se nombran las variables y clases, ya que al 
+tratarse de un proyecto en Python, se requiere seguir la convención de nombrado 
+snake_case.
+
+
+
+
+
+
